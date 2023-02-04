@@ -6,20 +6,16 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-@Entity
 @Data
-public class CitizenData {
+@Entity
+public class IncomeDetailsEntity {
 	
 	@Id
 	@GeneratedValue
 	private Integer id;
-	private Long appId;
-	private String planName;
-	private Double monthlySalaryIncome;
+	private Integer caseNumber;
+	private Double monthlyIncome;
 	private Double rentIncome;
 	private Double propertyIncome;
-	private String highestDegree;
-	private Integer graduationYear;
-	private String universityName;
 
 }
